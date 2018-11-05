@@ -1,0 +1,3 @@
+[submodule "themes/solidity-tour/static/js/ace-builds"]
+	path = themes/solidity-tour/static/js/ace-builds
+	url = https://github.com/ajaxorg/ace-builds.git

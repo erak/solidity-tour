@@ -1,0 +1,8 @@
+<div class="steps-nav">
+    {{if .PrevInSection}}
+        <a class="btn btn-small btn-nav round" href="{{ .PrevInSection.Permalink }}">Next</a>
+    {{end}}
+    {{if .NextInSection}}
+        <a class="btn btn-small btn-nav round" href="{{ .NextInSection.Permalink }}">Prev</a>
+    {{end}}
+</div>

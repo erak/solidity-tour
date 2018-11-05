@@ -1,0 +1,4 @@
+baseURL = "https://bit-shift.github.io/solidity-tour/"
+languageCode = "en-us"
+title = "Solidity Tour"
+theme = "solidity-tour"
