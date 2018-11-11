@@ -1,0 +1,206 @@
+/* 
+https://coolors.co/2c363f-5aa5e8-ebf0f4-d2d7db-a3b6c6
+
+B43F4E
+D92467
+EBE6BD
+12A698
+202427
+
+
+
+*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #202427;
+    margin: 0;
+    /* min-height: 100vh; */
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 12pt;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.cursive {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: cursive; */
+}
+
+.center {
+    text-align: center;
+}
+
+.hljs {
+    border-radius: 2pt;
+    padding: 0.9em !important;
+}
+
+.round {
+    border-radius: 3pt;
+}
+
+.centered-small {
+    width: 30%;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.container {
+    width: 85%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #EBE6BD;
+    padding: 20pt 20pt 40pt 20pt;
+    box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.1), -12px 0 8px -4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20pt 20pt 20pt 20pt;
+    background-color: #12A698;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* width: 18%; */
+    margin: auto;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 10pt;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid white; */
+    padding: 5pt;
+}
+
+.btn {
+    display: block;
+    width: 120pt;
+    height: 18pt;
+    margin: auto;
+    background-color: #D92467;
+    color: white;
+    text-align: center;
+    padding: 10pt;  
+    text-decoration: none; 
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.steps-nav {
+    width: 96%;
+    height: 35pt;
+    padding: 0 1em 0 0;
+}
+
+.steps-nav a {
+    float: right;
+    margin-left: 5pt;
+}
+
+.steps-nav h1 {
+    float: left;
+}
+
+.btn-small {
+    display: block;
+    width: 60pt;
+    padding: 5pt;
+    text-align: center;
+    text-decoration: none; 
+    background-color: #D92467;
+}
+
+.btn-nav {
+    background-color: #12A698;
+}
+
+.btn-control {
+    margin: 0;
+}
+
+.code, .docs {
+    width: 50%;
+    float: left;
+}
+
+.code {
+    height: 50vh;
+}
+
+.docs {
+    width: 46%;
+    padding: 0 1em 1em 0;
+    /* background-color: white; */
+}
+
+#editor { 
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100pt;
+    max-height: 200pt;
+    width: 95%;
+    padding-top: 1em;
+}
+
+#compilation {
+    width: 95%;
+}
+
+.stage {
+    margin-top: 1em;
+}
+
+.output {
+    padding: 1em;
+    /* color: white; */
+    color: black;
+    font-size: 10pt;
+    opacity: 0.7;
+}
+
+.success {
+    background-color: #12A698;
+}
+
+.error {
+    background-color: #D92467;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solidity Tour</title>
+    <link>https://bit-shift.github.io/solidity-tour/</link>
+    <description>Recent content on Solidity Tour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Nov 2018 03:09:05 +0100</lastBuildDate>
+    
+	<atom:link href="https://bit-shift.github.io/solidity-tour/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1</title>
+      <link>https://bit-shift.github.io/solidity-tour/steps/1/</link>
+      <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
+      
+      <guid>https://bit-shift.github.io/solidity-tour/steps/1/</guid>
+      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  Contracts Contracts in Solidity are similar to classes in object-oriented languages. Each contract can contain declarations of State Variables, Functions, Function Modifiers, Events, Struct Types and Enum Types. Furthermore, contracts can inherit from other contracts.
+There are also special kinds of contracts called libraries and interfaces.
+The section about contracts contains more details than this section, which serves to provide a quick overview.</description>
+    </item>
+    
+    <item>
+      <title>2</title>
+      <link>https://bit-shift.github.io/solidity-tour/steps/2/</link>
+      <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
+      
+      <guid>https://bit-shift.github.io/solidity-tour/steps/2/</guid>
+      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  State Variables State variables are variables whose values are permanently stored in contract storage.
+uint storedData;  See the Types section for valid state variable types and Visibility and Getters for possible choices for visibility.</description>
+    </item>
+    
+    <item>
+      <title>3</title>
+      <link>https://bit-shift.github.io/solidity-tour/steps/3/</link>
+      <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
+      
+      <guid>https://bit-shift.github.io/solidity-tour/steps/3/</guid>
+      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  Functions Functions are the executable units of code within a contract.
+function bid() public payable { }  Function Calls can happen internally or externally and have different levels of visibility towards other contracts.</description>
+    </item>
+    
+  </channel>
+</rss>
