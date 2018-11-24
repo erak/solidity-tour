@@ -17,9 +17,10 @@
       <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
       
       <guid>https://bit-shift.github.io/solidity-tour/steps/1/</guid>
-      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  Contracts Contracts in Solidity are similar to classes in object-oriented languages. Each contract can contain declarations of State Variables, Functions, Function Modifiers, Events, Struct Types and Enum Types. Furthermore, contracts can inherit from other contracts.
+      <description>pragma solidity =0.4.0   Contracts Contracts in Solidity are similar to classes in object-oriented languages. Each contract can contain declarations of State Variables, Functions, Function Modifiers, Events, Struct Types and Enum Types. Furthermore, contracts can inherit from other contracts.
 There are also special kinds of contracts called libraries and interfaces.
-The section about contracts contains more details than this section, which serves to provide a quick overview.</description>
+The section about contracts contains more details than this section, which serves to provide a quick overview.
+contract SimpleStorage { }</description>
     </item>
     
     <item>
@@ -28,7 +29,7 @@ The section about contracts contains more details than this section, which serve
       <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
       
       <guid>https://bit-shift.github.io/solidity-tour/steps/2/</guid>
-      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  State Variables State variables are variables whose values are permanently stored in contract storage.
+      <description>pragma solidity =0.4.0   State Variables State variables are variables whose values are permanently stored in contract storage.
 uint storedData;  See the Types section for valid state variable types and Visibility and Getters for possible choices for visibility.</description>
     </item>
     
@@ -38,7 +39,7 @@ uint storedData;  See the Types section for valid state variable types and Visib
       <pubDate>Sun, 04 Nov 2018 03:09:05 +0100</pubDate>
       
       <guid>https://bit-shift.github.io/solidity-tour/steps/3/</guid>
-      <description>pragma solidity =0.4.0        var editor = ace.edit(&#34;editor&#34;); editor.setTheme(&#34;ace/theme/tomorrow_night_eighties&#34;); editor.session.setMode(&#34;ace/mode/javascript&#34;); editor.renderer.setScrollMargin(10, 10) editor.getSession().setUseWorker(false);  Functions Functions are the executable units of code within a contract.
+      <description>pragma solidity =0.4.0   Functions Functions are the executable units of code within a contract.
 function bid() public payable { }  Function Calls can happen internally or externally and have different levels of visibility towards other contracts.</description>
     </item>
     
