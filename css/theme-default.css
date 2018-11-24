@@ -1,0 +1,40 @@
+body {
+    background-color: #efefef;
+}
+
+.container {
+    background-color: #fcfcfc;
+}
+
+.navbar {
+    background-color: #2980b9;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.btn {
+    background-color: #ff7e1c;
+    color: white;
+}
+
+.btn-small {
+    background-color: #ff7e1c;
+}
+
+.btn-nav {
+    background-color: #2980b9;
+}
+
+.success {
+    background-color: #21b08c;
+}
+
+.error {
+    background-color: #f07e93;
+}
+
+.output {
+    color: black;
+}
