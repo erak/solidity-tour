@@ -1,20 +1,55 @@
-{{ partial "header.html" . }}
+{{ partial "header_solc.html" . }}
 
 <section id="step">
-    <div class="steps-nav">
-        <h1 id="title">{{ .Title }} / {{ len (where .Site.RegularPages "Section" "==" "steps") }}</h1>
-        {{if .PrevInSection}}
-            <a class="btn btn-small btn-nav round" href="{{ .PrevInSection.Permalink }}">Next</a>
-        {{end}}
-        {{if .NextInSection}}
-            <a class="btn btn-small btn-nav round" href="{{ .NextInSection.Permalink }}">Prev</a>
-        {{end}}
+    <div id="steps-nav" class="steps-nav">
+        <h1 id="title"><span>{{ .Title }}</span> / {{ len (where .Site.RegularPages "Section" "==" "steps") }}</h1>
+        <div class="buttons">
+
+        </div>
     </div>
     <div>
         <div id="content">
-            {{ .Content }}
+            {{ range (where .Site.RegularPages "Section" "==" "steps") }}
+                <div class="step">
+                    {{ .Content }}
+                </div>
+            {{ end }}
         </div>
+        <script>
+            $('#content').slick({
+                infinite: false,
+                slidesToShow: 1,
+                fade: true,
+                cssEase: 'ease',
+                initialSlide:  $('#steps-nav span').html() - 1,
+                appendArrows: $('#steps-nav .buttons'),
+                prevArrow: '<a class="btn btn-small btn-nav round">Prev</a>',
+                nextArrow: '<a class="btn btn-small btn-nav round">Next</a>',
+            });
+            $('#content').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                const step = nextSlide + 1;
+                history.pushState(null, '', '/solidity-tour/steps/' + step + '/');
+                $('#steps-nav span').html(step);
+            });
+
+            var editors = [];
+            $( '.editor' ).each(function( index ) {
+                var editor = ace.edit(this);
+                editor.getSession().setMode('ace/mode/javascript');
+                editor.setTheme("ace/theme/tomorrow_night_eighties");
+                editor.renderer.setScrollMargin(10, 10);
+                editor.getSession().setUseWorker(false);
+                editors.push(editor);
+            });
+        </script>
     </div>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="../../js/bundle.js"></script>
 </section>
 
 {{ partial "footer.html" . }}
