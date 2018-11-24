@@ -66,10 +66,16 @@ p {
 }
 
 .site {
-    width: 85%;
+    width: 95%;
     min-height: 100vh;
     margin: auto;
     box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.1), -12px 0 8px -4px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 400px) {
+    .site {
+        width: 85%;
+    }
 }
 
 .container {
@@ -146,16 +152,32 @@ p {
     opacity: 0.2;
 }
 
+.slick-track {
+    margin: 0;
+}
+
+@media(min-width: 400px) {
+    .slick-track {
+        margin: 0 auto;
+    }
+}
+
 .steps-nav h1 {
     float: left;
 }
 
 .btn-small {
     display: block;
-    width: 60pt;
+    width: 40pt;
     padding: 5pt;
     text-align: center;
     text-decoration: none; 
+}
+
+@media(min-width: 400px) {
+    .btn-small {
+        width: 60pt;
+    }
 }
 
 .btn-control {
