@@ -28,11 +28,11 @@ body {
 }
 
 .success {
-    background-color: #21b08c;
+    background-color: #e4ffcb;
 }
 
 .error {
-    background-color: #f07e93;
+    background-color: #fd2c29;
 }
 
 .output {
