@@ -67,6 +67,12 @@ p {
 
 @media(min-width: 512px) {
     .centered-small {
+        width: 60%;
+    }
+}
+
+@media(min-width: 770px) {
+    .centered-small {
         width: 30%;
     }
 }
@@ -143,7 +149,13 @@ p {
 
 @media(min-width: 512px) {
     .logo {
-        width: 30%;
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) {
+    .logo {
+        width: 35%;
     }
 }
 
@@ -190,7 +202,7 @@ p {
 
 .btn-small {
     display: block;
-    width: 40pt;
+    width: 48pt;
     padding: 5pt;
     text-align: center;
     text-decoration: none; 
